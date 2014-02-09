@@ -8,26 +8,21 @@
 </div>
 <div class="row-fluid">
 <ul style="display:inline;">
-<li style="display:inline;"><a style="padding:10px;" href="#/contacts"><i class="fa fa-users"></i></a></li> 
-<li style="display:inline;"><a style="padding:10px;" href="#/create"><i class="fa fa-plus-circle"></i></a></li>
-<li style="display:inline;"><i style="padding:10px;" class="fa fa-bolt"></i> pin : {{ profile.contact_id }}
+<li style="display:inline;"><a style="padding:10px;" href="#/contacts"><i class="fa fa-users fa-5x"></i></a></li> 
+<li style="display:inline;"><a style="padding:10px;" href="#/create"><i class="fa fa-plus-circle fa-5x"></i></a></li>
+<li style="display:inline;"><i style="padding:10px;" class="fa fa-bolt fa-5x"></i> pin : {{ profile.contact_id }}
 </li>
 </ul>
 </div>
 
 <div>
 <ul style="display:inline">
-<li style="display:inline"><a href="#/phones"><i class="fa fa-phone-square"></i></a></li>
-<li ng-repeat="social in profile.social" style="display:inline"><a href="http//{{social.type}}.com/{{social.handle}}"><i style="padding:10px;" class="fa fa-{{social.type}}-square"></i></a></li>
-<li ng-repeat="email in profile.email"><a href="{{email.email}}"><i class="fa fa-envelope-o"></i></li>
+<li style="display:inline"><a href="#/phones"><i class="fa fa-phone-squarefa-5x"></i></a></li>
+<li ng-repeat="social in profile.social" style="display:inline"><a href="http//{{social.type}}.com/{{social.handle}}"><i style="padding:10px;" class="fa fa-{{social.type}}-square fa-5x"></i></a></li>
+<li ng-repeat="email in profile.email" style="display:inline"><a href="{{email.email}}"><i class="fa fa-envelope-o fa-5x"></i></li>
 </ul>
-
-<ul>
 
 <h2><a href="#/email"><b>MyEmails</b></a></h2>
-
-  <li ng-repeat="email in profile.email"><i class="fa fa-envelope-o"></i> {{ email.type }} : {{ email.email }} </li>
-</ul>
 
 
 <ul>
