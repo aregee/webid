@@ -16,10 +16,10 @@
 </div>
 
 <div>
-<h2><a href="#/phones"><i class="fa fa-phone-square"></i></a></h2>
-
-<ul>
-<li ng-repeat="social in profile.social "><i style="padding:10px;" class="fa fa-{{social.type}}-square"></i> : {{ social.handle }} </li>
+<ul style="display:inline">
+<li style="display:inline"><a href="#/phones"><i class="fa fa-phone-square"></i></a></li>
+<li ng-repeat="social in profile.social" style="display:inline"><a href="http//{{social.type}}.com/{{social.handle}}"><i style="padding:10px;" class="fa fa-{{social.type}}-square"></i></a></li>
+<li ng-repeat="email in profile.email"><a href="{{email.email}}"><i class="fa fa-envelope-o"></i></li>
 </ul>
 
 <ul>
