@@ -7,7 +7,7 @@ config(function(RestangularProvider,$httpProvider ,$routeProvider) {
       $httpProvider.defaults.useXdomain = true;
       delete $httpProvider.defaults.headers.common['X-Requested-With'];
     
-      RestangularProvider.setBaseUrl("http://127.0.0.1:8000/api/v1/");
+      RestangularProvider.setBaseUrl("http://webid-rahulgaur.rhcloud.com/api/v1/");
 
 
        $routeProvider.when('/join', {
