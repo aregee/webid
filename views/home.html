@@ -1,0 +1,35 @@
+
+<title>WebId | {{user.username }}</title>
+
+<h1> {{ profile.first_name + profile.last_name  }}</h1>
+<a href="#/contacts"><b>MyContacts</b></a> 
+<a href="#/create"><b>Create Profile</b></a>
+<h2> Unique Pin : {{ profile.contact_id }} </h2>
+<ul>
+<h2><a href="#/phones"><b>MyPhones</b></a></h2>
+
+  <li ng-repeat="phone in profile.phone "> {{ phone.type}} : {{phone.phone }} </li>
+</ul>
+
+<ul>
+<h2><a href="#/social"><b>MySocials</b></a></h2>
+
+  <li ng-repeat="social in profile.social "> {{ social.type }} : {{ social.handle }} </li>
+</ul>
+
+
+<ul>
+
+<h2><a href="#/email"><b>MyEmails</b></a></h2>
+
+  <li ng-repeat="email in profile.email "> {{ email.type }} : {{ email.email }} </li>
+</ul>
+
+
+<ul>
+<h2><a href="#/website"><b>MyWebsites</b></a></h2>
+
+  <li ng-repeat="website in profile.website "> <a href="http://{{ website.website }}" >{{website.website}}</li>
+</ul>
+
+<button ng-click="Logout()">Sign out</button>

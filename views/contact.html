@@ -1,0 +1,22 @@
+<title>WebId | {{user.username }}</title>
+
+<h1> {{ profile.first_name + profile.last_name  }}</h1>
+<h2> Unique Pin : {{ profile.contact_id }} </h2>
+<button ng-click="Add()">Add</button>
+<ul>
+  <li ng-repeat="phone in profile.phone "> {{ phone.type}} : {{phone.phone }} </li>
+</ul>
+
+<ul>
+  <li ng-repeat="social in profile.social "> {{ social.type }} : {{ social.handle }} </li>
+</ul>
+
+
+<ul>
+  <li ng-repeat="email in profile.email "> {{ email.type }} : {{ email.email }} </li>
+</ul>
+
+
+<ul>
+  <li ng-repeat="website in profile.website "> <a href="http://{{ website.website }}" >{{website.website}}</li>
+</ul>
