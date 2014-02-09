@@ -1,0 +1,11 @@
+
+<title> WebId | {{user.username}}</title>
+<h1> {{ user.username}}'s Email List </h1>
+<a href="#/add/email"><button>Add New</button></a>	
+<a href="#/edit/email/{{email.id}}"><button>Update</button></a>
+<button ng-Click="Delete()">Delete</button>		
+<ul>
+  <li> {{ email.id }} <br> <b>type</b>: {{email.type}} <br>  <b>Email </b> {{email.email}}
+
+  </li>
+</ul>

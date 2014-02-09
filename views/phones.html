@@ -1,0 +1,9 @@
+
+<title> WebId | {{user.username}}</title>
+<h1> {{ user.username}}'s Contact List </h1>
+<a href="#/add/phones"><button>Add New</button></a>	
+<ul>
+  <li ng-repeat="Phone in Phones.phones"> {{ Phone.id }} <br> <b>type</b>: {{Phone.type}} <br>  <b>Phone</b> {{Phone.phone}}
+  <button><a href="#/phones/{{Phone.id}}"><b>View </b></a></button>	
+  </li>
+</ul>

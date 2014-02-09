@@ -1,0 +1,8 @@
+<title> WebId | {{user.username}}</title>
+<h1> {{ user.username}}'s Contact List </h1>
+<a href="#/add/website"><button>Add New</button></a>	
+<ul>
+  <li ng-repeat="url in Website.websites"> {{ url.id }} <br> <b>URL</b> <a href="http://{{url.website}}">{{url.website}}</a>
+  <button><a href="#/website/{{url.id}}"><b>View </b></a></button>	
+  </li>
+</ul>

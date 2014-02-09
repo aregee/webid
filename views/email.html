@@ -1,0 +1,8 @@
+<title> WebId | {{user.username}}</title>
+<h1> {{ user.username}}'s Contact List </h1>
+<a href="#/add/email"><button>Add New</button></a>	
+<ul>
+  <li ng-repeat="email in Emails.emails"> {{ email.id }} <br> <b>type</b>: {{email.type}} <br>  <b>Email</b> {{email.email}}
+  <button><a href="#/email/{{email.id}}"><b>View </b></a></button>	
+  </li>
+</ul>

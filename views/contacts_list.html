@@ -1,0 +1,5 @@
+<title> WebId | {{user.username}}</title>
+<h1> {{ user.username}}'s Contact List </h1>
+<ul>
+  <li ng-repeat="contact in Contacts.contacts "> {{ contact.Contact }} <b>link:</b> <a href="#/contacts/{{contact.Contact_id}}">{{ contact.Contact}} </a></li>
+</ul>
