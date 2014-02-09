@@ -18,9 +18,9 @@
 <div>
 <h2><a href="#/phones"><i class="fa fa-phone-square"></i></a></h2>
 
-
-<h2 ng-repeat="social in profile.social "><i style="padding:10px;" class="fa fa-{{social.type}}-square"></i> : {{ social.handle }} </h2>
-
+<ul>
+<li ng-repeat="social in profile.social "><i style="padding:10px;" class="fa fa-{{social.type}}-square"></i> : {{ social.handle }} </li>
+</ul>
 
 <ul>
 
